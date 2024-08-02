@@ -63,7 +63,7 @@ aside{
           width: 100%;
         }
       }
-      
+
       & i{
         color: #fff;
         margin-right: 12px;
@@ -84,6 +84,6 @@ aside{
     }
   }
 
-  
+  main{}
 
 }
