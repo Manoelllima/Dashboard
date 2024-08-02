@@ -40,12 +40,48 @@ img{
 aside{
   background-color: #2D3035;
   height: 100vh;
+  position: relative;
   width: 20%;
 
   & h3{
     background-color: #000;
     color: #fff;
     padding: 20px 0;
+    font-size: 26px;
     text-align: center;
   }
+
+
+  & nav{
+    margin-top: 30px;
+    & ul{        
+      & li{
+        & a{
+          display: inline-block;
+          padding: 15px 10px;
+          color: #fff;
+          width: 100%;
+        }
+      }
+      & i{
+        color: #fff;
+        margin-right: 12px;
+      }
+      & li:last-of-type{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+ 
+      & li:hover{
+        background-color: #ffffff86;
+        & a > i{
+          color: #a200d3;
+        }
+      }
+    }
+  }
+
+  
+
 }
