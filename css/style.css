@@ -1,0 +1,39 @@
+/*reset de pagina*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+.center {
+  padding: 0 2%;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+img{
+  max-width: 100%; /*sempre usar max-width: 100% em imagens*/
+}
+/*reset de pagina*/
