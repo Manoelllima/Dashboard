@@ -8,3 +8,10 @@ input_pesquisa.addEventListener('blur',function () {
     }
 })
 
+pesquisa.addEventListener('click', function(){    
+    if(input_pesquisa.value == ''){
+        input_pesquisa.classList.add('width');
+        input_pesquisa.focus();
+    }
+})
+
