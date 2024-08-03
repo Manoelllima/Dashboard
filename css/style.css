@@ -98,6 +98,7 @@ main {
     & .pesquisa {
       float: right;
       margin-top: 17px;
+      margin-right: 15px;
       & .icon {
         float: left;
 
@@ -116,10 +117,30 @@ main {
           transition: width 2s;
           width: 0;
         }           
-      }
+      }      
 
       & .icon:not(.icon:last-of-type) {
         margin-right: 20px;
+      }
+
+      & .icon:last-of-type{
+        position: relative;
+        display: inline-block;
+
+        & span{
+          background-color: crimson;
+          border-radius: 50%;
+          color: #fff;          
+          font-size: 10px;          
+          height: 25px;
+          position: absolute;
+          top: -10px;
+          right: -12px;
+          padding-top: 8px;
+          width: 25px;
+          vertical-align: middle;
+          text-align: center;
+        }
       }
 
     
