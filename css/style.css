@@ -32,18 +32,19 @@ li {
 .clear {
   clear: both;
 }
-img{
+img {
   max-width: 100%; /*sempre usar max-width: 100% em imagens*/
 }
 /*reset de pagina*/
 
-aside{
-  background-color: #2D3035;
+aside {
+  background-color: #2d3035;
+  float: left;
   height: 100vh;
   position: relative;
-  width: 20%;
+  min-width: 20%;
 
-  & h3{
+  & h3 {
     background-color: #000;
     color: #fff;
     padding: 20px 0;
@@ -51,12 +52,11 @@ aside{
     text-align: center;
   }
 
-
-  & nav{
+  & nav {
     margin-top: 30px;
-    & ul{        
-      & li{
-        & a{
+    & ul {
+      & li {
+        & a {
           display: inline-block;
           padding: 15px 10px;
           color: #fff;
@@ -64,28 +64,73 @@ aside{
         }
       }
 
-      & i{
+      & i {
         color: #fff;
         margin-right: 12px;
       }
 
-      & li:last-of-type{
+      & li:last-of-type {
         position: absolute;
         bottom: 0;
         width: 100%;
       }
- 
-      & li:hover{
+
+      & li:hover {
         background-color: #ffffff86;
-        & a > i{
+        & a > i {
           color: #a200d3;
         }
       }
     }
   }
+}
 
-  main{
+main {
+  float: left;
+  height: 100vh;
+  min-width: 80%;
+  & header {
+    border-bottom: 1px solid #2d30353b;
+    min-height: 69.9px;
+    padding: 10px;
+    width: 100%;
+
+    & .pesquisa {
+      float: right;
+      margin-top: 10px;
+      & .icon {
+        float: left;
+
+        & i {
+          color: #2d3035;
+          cursor: pointer;
+          font-size: 20px;
+          margin-top: 5px;
+          vertical-align: middle;
+        }
+
+        & input[type="search"] {
+          margin-right: 10px;
+          float: left;
+          padding: 5px;
+          transition: width 2s;
+          width: 0;
+        }           
+      }
+
+      & .icon:not(.icon:last-of-type) {
+        margin-right: 20px;
+      }
+
     
+    }
   }
+}
 
+
+/*Animação*/
+
+.width{
+  width: 150px !important;
+  transition: 1s;
 }
