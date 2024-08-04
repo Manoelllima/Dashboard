@@ -4,18 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <title>Dashboard</title>
 </head>
@@ -41,7 +32,7 @@
       <div class="pesquisa" name="pesquisa">
         <div class="icon"><i class="fa-solid fa-user"></i></div>
         <div class="icon"><input type="search" name="" id=""><i class="fa-solid fa-magnifying-glass"></i></div>
-        <div class="icon"><i class="fa-solid fa-bell"><span>1</span></i></div>
+        <div class="icon"><i class="fa-solid fa-bell"><span></span></i></div>
       </div><!--pesquisa-->
       <div class="clear"></div>
     </header>
@@ -66,30 +57,33 @@
 
         <div class="w100">
           <div class="w100-wrap">
-            <h2>OLÁ USUÁRIO, SEJA BEM-VINDO!</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur
-              dipisicing elit. Labore nulla asperiores
-              id qui autem quis fugiat ipsa nisi nemo
-              deleniti.
-              Lorem ipsum dolor sit amet consectetur
-              dipisicing elit. Labore nulla asperiores
-              id qui autem quis fugiat ipsa nisi nemo
-              deleniti.
-            </p>
+            <h2>RECENTES</h2>
+            <div class="btn-containerr">
+              <button>RELATORIOS DE PRODUTOS</button>
+              <button>ESTATÍSTICAS DE VENDAS</button>
+              <button>RESET DE SENHA</button>
+              <button>CONTEUDO PRINCIPAL</button>
+              <button>ALTERAÇÕES DA LINHA DO TEMPO</button>
+              <button>PERFIL DO USUÁRIO</button>
+              <button>CONFIGURAÇÕES</button>
+              <button>NOTIFICAÇÕES</button>
+            </div>
           </div><!-- w100-wrap -->
         </div><!-- w100 -->
 
 
         <div class="w50">
           <div class="w50-wrap">
-            <h2>OLÁ USUÁRIO, SEJA BEM-VINDO!</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur
-              dipisicing elit. Labore nulla asperiores
-              id qui autem quis fugiat ipsa nisi nemo
-              deleniti.
-            </p>
+            <h2>DEIXE UM RECADO</h2>
+
+            <div class="submit">
+              <input type="text" name="titulo" placeholder="Titulo">
+              <input type="text" name="destinatario" id="" placeholder="Para quem?">
+              <textarea name="mensagem" id="" placeholder="Digite sua mensagem..."></textarea>
+              <button name="enviar">DEIXAR RECADO</button>
+            </div>
+
+
           </div>
         </div><!-- w50 -->
 
@@ -108,21 +102,27 @@
         </div><!-- w50 -->
         <div class="clear"></div>
 
-        <div class="w100">
+        <div class="mensagens w100">
           <div class="w100-wrap">
-            <h2>OLÁ USUÁRIO, SEJA BEM-VINDO!</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur
-              dipisicing elit. Labore nulla asperiores
-              id qui autem quis fugiat ipsa nisi nemo
-              deleniti.
-              Lorem ipsum dolor sit amet consectetur
-              dipisicing elit. Labore nulla asperiores
-              id qui autem quis fugiat ipsa nisi nemo
-              deleniti.
-            </p>
+            <h2>MENSAGENS</h2>
+            <div class="conteudo" name="conteudo">
+              <ul>
+                <li>
+                  <h3 name="titulo">Titulo</h3>
+                  <h3 name="remetente">
+                    Remetente: <i>user</i>
+                  </h3>
+
+                  <p name="mensagem">
+                    conteudo
+                  </p>
+
+                  <span>x</span>
+                </li>
+              </ul>
+            </div>
           </div><!-- w100-wrap -->
-        </div><!-- w100 -->
+        </div><!--mensagem w100 -->
 
       </div><!-- panel -->
       <div class="atualizacoes">

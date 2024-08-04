@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Arial';
 }
 
 html,
@@ -139,6 +140,7 @@ main {
         display: inline-block;
 
         & span {
+          display: none;
           background-color: crimson;
           border-radius: 50%;
           color: #fff;
@@ -159,7 +161,8 @@ main {
   }
 
   & .container {
-    height: calc(100% - 69.9px);
+    color: #717172;
+    height: calc(100% - 75px);
     width: 100%;
 
     & .panel {
@@ -175,7 +178,7 @@ main {
       }
 
       & p {
-        font-family: 'Varela Round';
+        
         font-size: 15px;
         padding-top: 20px;
       }
@@ -186,9 +189,9 @@ main {
 
         & .w100-wrap {
           background-color: #fff;
-          border: 1px solid #2d3035;
+          border: 3px solid #717172;
           padding: 40px 20px;
-          height: inherit;
+          min-height: 250px;
           margin: 0 15px;
           clear: both;
 
@@ -197,26 +200,74 @@ main {
 
       }
 
+      & .mensagens{
+        display: none;
+        & .conteudo{
+          margin-top: 10px;
+          
+
+          & ul{
+            & li{
+              position: relative;
+              border-bottom: 2px solid #717172;
+              padding: 10px 0;
+              margin: 10px ;
+              & span{
+                background-color: crimson;
+                color: #fff;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                height: 25px;
+                width: 25px;
+                text-align: center;
+              }
+            }
+
+          }
+        }
+      }
+
 
       & .w50 {
         padding-top: 35px;
         margin-bottom: 35px;
         display: block;
-        height: 240px;
+        min-height: 240px;
         float: left;
         width: 50%;
+        text-align: center;
 
         & .w50-wrap {
           background-color: #fff;
-          border: 1px solid #2d3035;
+          border: 3px solid #717172;
           height: inherit;
           margin: 0 15px;
           padding: 40px 20px;
 
-          & h2 {}
+          & h2 {
+            
+          }
 
-          & p {
-            padding-top: 10px;
+          & .submit{
+            width: 100%;
+            & input,
+            textarea{
+              color: #717172;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 15px;
+              margin-top: 10px;
+              padding: 5px 10px;
+              width: 100%;
+            }
+
+            & textarea{
+              height: 150px;
+              resize: none;
+              overflow-y: scroll;
+            }
           }
         }
       }
@@ -226,8 +277,10 @@ main {
     }
 
     & .atualizacoes {
+      background-color: #cacaca;
       float: left;
       height: 100%;
+      padding: 20px;
       width: 30%;
 
     }
@@ -247,7 +300,7 @@ button {
   color: #fff;
   background-color: #717172;
   border: 0;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px 20px;
   margin-top: 15px;
 }
