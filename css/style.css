@@ -165,6 +165,7 @@ main {
     height: calc(100% - 75px);
     width: 100%;
 
+
     & .panel {
       background-color: #ebebeb;
       float: left;
@@ -279,9 +280,62 @@ main {
     & .atualizacoes {
       background-color: #cacaca;
       float: left;
-      height: 100%;
-      padding: 20px;
+      height: 100%;     
       width: 30%;
+      overflow-y: scroll;
+      & h2{
+        border-bottom: 2px solid #a7a6a6;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      & .time{
+        margin-top: 15px;
+        height: 100%;
+        position: relative;
+        
+        & .line-time{
+          float: left;
+          width: 20%;
+          height: inherit;
+          
+          & .line{
+            background-color: #2d3035;
+            width: 3px;
+            height: 100%;
+            position: absolute;
+            left: 10%;
+            transform: translateX(-50%);
+          }
+        }
+
+        & .alteracao{
+          float: right;
+          width: 80%;
+
+          & .conteudo{
+            margin-top: 10px;
+            border-bottom: 1px solid #a7a6a6;
+            padding: 10px 0;
+            & span{
+              & i{
+                position: absolute;
+                border-radius: 50%;
+                border: 2px solid #2d3035;
+                background-color: #2d3035;
+                left: 10%;
+                transform: translateX(-50%);
+                height: 15px;
+                width: 15px;
+              }
+            }
+
+            & h3{
+              padding: 10px 0;
+            }
+          }
+        }
+      }
 
     }
 
