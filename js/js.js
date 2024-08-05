@@ -5,11 +5,11 @@ let notificacao = document.querySelector('.pesquisa .icon:last-of-type > i > spa
 let recado_input = document.querySelector('.w50-wrap .submit').children;
 let mensagem = document.querySelector('main .container .panel .mensagens');
 let mensagem_conteudo = document.querySelector('main .container .panel .mensagens .conteudo');
-let close_recado = document.querySelectorAll('.conteudo ul li span')
+let close_recado = document.querySelectorAll('.conteudo ul li span');
+let icon_menu = document.querySelector('.icon-mobile i')
+
 let primeira = true;
 let cont = 0;
-
-console.log(close_recado)
 
 /*ICONE DE PESQUISA*/
 input_pesquisa.addEventListener('focus',function(){input_pesquisa.classList.add('width');})
@@ -59,9 +59,26 @@ recado_input.enviar.addEventListener('click',function () {
 })
 
 for(let i = 0; i < close_recado.length; i++){
-    console.log(close_recado)
     close_recado[i].addEventListener('click',function () {
         this.parentElement.remove()
         
     })
 }
+
+icon_menu.addEventListener('click',function(){
+    let aside = document.querySelector('body aside');
+    let main = document.querySelector('main')
+     main.style.position = 'absolute'
+    if(aside.style.width != '300px'){
+        aside.style.width = '300px'
+        aside.children[2].style.display = 'block'       
+        main.style.left = '300px'
+        main.style.paddingLeft = '0px'
+    }else{
+        aside.style.width = '80px'
+        aside.children[2].style.display = 'none'
+        main.style.left = '0px'
+        main.style.paddingLeft = '80px'
+    }
+    
+})
